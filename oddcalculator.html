@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+var num1 = parseInt(prompt("Give me a number!"));
+console.log(num1);
+while (isNaN(num1) === true) {
+  num1 = parseInt(prompt("ERROR: Please enter an actual number."));
+}
+var num2 = parseInt(prompt("Give me another number."));
+while (isNaN(num2) === true) {
+  num2 = parseInt(prompt("ERROR: Please enter an actual number."));
+}
+var op = prompt("Which operation do you want to do?\nType mult, div, or mod.");
+if (op === "mult") {
+  console.log(num1 * num2);
+} else if (op === "div") {
+  console.log(num1 / num2);
+} else if (op === "mod") {
+  console.log(num1 % num2);
+} else {
+  console.log("*** invalid operation ***");
+}
+</script>
+</body>
+</html>
